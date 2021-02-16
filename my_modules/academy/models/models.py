@@ -19,5 +19,7 @@ class academy(models.Model):
 
 class Teachers(models.Model):
     _name = 'academy.teachers'
-    
-    name = fields.Char
+    _description = 'academy.teachers'
+
+    name = fields.Char()
+    description = fields.Text()
