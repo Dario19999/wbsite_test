@@ -7,7 +7,7 @@ class Academy(http.Controller):
     def index(self, **kw):
         Teachers = http.request.env['academy.teachers']
         return http.request.render('academy.index', {
-            'teachers': Teachers.Search([])
+            'teachers': Teachers.search([])
         })
 
     @http.route('/academy/academy/objects/', auth='public')
