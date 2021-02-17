@@ -7,8 +7,9 @@
                     <div class="container">
                         <t t-foreach="teachers" t-as="teacher">
                             <p><a t-attf-href="/academy/{{ slug(teacher) }}">
-                              <t t-esc="teacher.name"/></a>
-                            </p>
+                              <t t-esc="teacher.name"/>
+                              <t t-esc="teacher.description"/>
+                            </a></p>
                         </t>
                     </div>
                 </div>
