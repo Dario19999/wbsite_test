@@ -9,6 +9,10 @@ class Academy(http.Controller):
         return http.request.render('academy.index', {
             'teachers':Teachers
         })
+    
+    @http.route('academy/<name>0', auth='public', website=True)
+    def teacher(self, name):
+        return f'<h1>{name}</h1>'
 
 #     @http.route('/academy/academy/objects/', auth='public')
 #     def list(self, **kw):
