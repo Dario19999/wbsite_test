@@ -13,7 +13,7 @@
             </t>
         </template>
 
-        <template id="listing">
+<!--         <template id="listing">
           <ul>
             <li t-foreach="objects" t-as="object">
               <a t-attf-href="#{ root }/objects/#{ object.id }">
@@ -30,7 +30,7 @@
               <dd><t t-esc="object[field]"/></dd>
             </t>
           </dl>
-        </template>
+        </template> -->
 
     </data>
 </odoo>
