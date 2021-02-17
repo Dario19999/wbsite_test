@@ -22,9 +22,10 @@
                 <div class="oe_structure"/>
                 <div class="oe_structure">
                     <div class="container">
-                        <h3><t t-esc="person.name"/></h3>
-                        <p><t t-esc="person.description"/></p>
-                        <div><t t-esc="person.biography"/></div>
+                        <h3><t t-field="person.name"/></h3>
+                        <p>Last modified: <i t-field="person.write_date"/></p>
+                        <p><t t-field="person.description"/></p>
+                        <div><t t-field="person.biography"/></div>
                     </div>
                 </div>
                 <div class="oe_structure"/>
