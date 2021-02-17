@@ -23,3 +23,4 @@ class Teachers(models.Model):
 
     name = fields.Char()
     description = fields.Text()
+    biography = fields.Html()
