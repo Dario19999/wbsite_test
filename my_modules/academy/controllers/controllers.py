@@ -10,7 +10,7 @@ class Academy(http.Controller):
             'teachers':Teachers
         })
     
-    @http.route('/academy/<model("academy.techaers"):teacher>/', auth='public', website=True)
+    @http.route('/academy/<model("academy.teachers"):teacher>/', auth='public', website=True)
     def teacher(self, teacher):
         return http.request.render('academy.biography', {
             'person':teacher
