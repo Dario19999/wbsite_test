@@ -24,8 +24,8 @@
                     <div class="container">
                         <h3><t t-field="person.name"/></h3>
                         <p>Last modified: <i t-field="person.write_date"/></p>
-                        <p><t t-field="person.description"/></p>
-                        <div><t t-field="person.biography"/></div>
+                        <p t-field="person.description"/>
+                        <div t-field="person.biography"/>
                     </div>
                 </div>
                 <div class="oe_structure"/>
